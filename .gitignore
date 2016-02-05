@@ -14,5 +14,8 @@ pip-selfcheck.json
 # Ignore all django settings that may contain sensitive information
 *settings.py
 
+# Ignore databases
+*.sqlite3
+
 # Ignore django .json backups that contain database information
 *.json
