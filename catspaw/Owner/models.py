@@ -34,3 +34,12 @@ class Company(Owner):
     name = models.CharField(max_length=50, unique=True)
     website = models.CharField(max_length=50, null=True, blank=True)
     people = models.ManyToManyField(Person)
+
+class Brand(models.Model):
+    """ Information on a brand's characteristics and its owner. """
+    owner = models.ForeignKey(Owner, null=True, blank=True)
+    brand_id = models.CharField(max_length=50, unique=True)
+    brand_loc = models.CharField(max_length=50, null=True, blank=True)
+
+    # Waddles, earmarks, and other types of identification marks
+    other_id = models.CharField(max_length=50, null=True, blank=True)
