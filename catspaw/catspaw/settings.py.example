@@ -39,6 +39,7 @@ ALLOWED_HOSTS = []
 # Application definition
 
 INSTALLED_APPS = [
+    'Event.apps.EventConfig',
     'Performance.apps.PerformanceConfig',
     'Location.apps.LocationConfig',
     'Owner.apps.OwnerConfig',
